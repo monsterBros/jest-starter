@@ -6,6 +6,7 @@
 module.exports = {
     preset: 'ts-jest',
     moduleDirectories: ["node_modules", "src"],
+    testEnvironment: "jsdom",
     // All imported modules in your tests should be mocked automatically
     // automock: false,
 
@@ -131,6 +132,7 @@ module.exports = {
 
     // A list of paths to modules that run some code to configure or set up the testing framework before each test
     // setupFilesAfterEnv: [],
+    setupFilesAfterEnv: ['./tests/jest-setup.ts'],
 
     // The number of seconds after which a test is considered as slow and reported as such in the results.
     // slowTestThreshold: 5,
