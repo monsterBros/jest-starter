@@ -1,8 +1,15 @@
 {
   "compilerOptions": {
     "baseUrl": "./",
+    "types": ["node", "jest"],
+    "jsx": "react",
+    
     "paths": {
-      "utils/*": ["src/utils/*"]
+      "utils/*": ["src/utils/*"],
+      "components/*": ["src/components/*"],
+      "apis/*": ["src/apis/*"],
+      "hooks/*": ["src/hooks/*"],
+      "store/*": ["src/store/*"]
     },
     /* Visit https://aka.ms/tsconfig.json to read more about this file */
 
@@ -101,6 +108,5 @@
     /* Completeness */
     // "skipDefaultLibCheck": true,                      /* Skip type checking .d.ts files that are included with TypeScript. */
     "skipLibCheck": true,                                 /* Skip type checking all .d.ts files. */
-    "types": ["node", "jest"]
   }
 }
