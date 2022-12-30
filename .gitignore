@@ -13,3 +13,7 @@ coverage/lcov-report/index.html
 coverage/lcov-report/storage.ts.html
 coverage/lcov-report/sum.ts.html
 coverage/lcov.info
+coverage/lcov.info
+coverage/lcov-report/index.html
+coverage/coverage-final.json
+coverage/clover.xml
