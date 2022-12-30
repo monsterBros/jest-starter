@@ -1,4 +1,4 @@
-/ tests/components/AuthButton/mockGetUserRole.test.tsx
+/ tests/cemnnoopst / AuthButton / mockGetUserRole.test.tsx;
 import React from "react";
 import { render, screen } from "@testing-library/react";
 import AuthButton from "components/AuthButton";
