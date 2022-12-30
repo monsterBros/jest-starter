@@ -8,8 +8,12 @@ module.exports = {
     moduleDirectories: ["node_modules", "src"],
     testEnvironment: "jsdom",
     transform: {
-        ".+\\.(css|styl|less|sass|scss|png|jpg|ttf|woff|woff2)$": "jest-transform-stub"
+        // 使用 swc 转译 JavaScript 和 TypeScrit
+        "^.+\\.(t|j)sx?$": ["@swc/jest"],
+        // 静态资源 stub 转译
+        ".+\\.(css|styl|less|sass|scss|png|jpg|ttf|woff|woff2)$": "jest-transform-stub",
     },
+    maxWorkers: 1,
     // testEnvironment: 'jest-environment-jsdom-global',
     // All imported modules in your tests should be mocked automatically
     // automock: false,

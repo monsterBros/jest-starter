@@ -1,8 +1,6 @@
-/ tests/cemnnoopst / AuthButton / mockGetUserRole.test.tsx;
 import React from "react";
 import { render, screen } from "@testing-library/react";
 import AuthButton from "components/AuthButton";
-// 注意：这里要写成 * as userUtils！！！
 import * as userUtils from "apis/user";
 import { AxiosResponse } from "axios";
 

@@ -1,4 +1,3 @@
-// tests/components/AuthButton/mockHttp.test.tsx
 // 更偏向真实用例，效果更好
 import server from "../../mockServer/server";
 import { rest } from "msw";
