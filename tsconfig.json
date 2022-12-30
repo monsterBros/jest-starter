@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "baseUrl": "./",
-    "types": ["node", "jest"],
+    "types": ["node", "jest", "@testing-library/jest-dom"],
     "jsx": "react",
     
     "paths": {

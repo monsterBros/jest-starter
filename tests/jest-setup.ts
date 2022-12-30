@@ -1,5 +1,6 @@
 // tests/jest-setup.ts
 import "jest-location-mock";
+import '@testing-library/jest-dom'
 
 Object.defineProperty(global, 'localStorage', {
     value: {
@@ -19,3 +20,18 @@ Object.defineProperty(global, 'localStorage', {
     },
     configurable: true,
   })
+
+
+  import server from "./mockServer/server";
+
+beforeAll(() => {
+  server.listen();
+});
+
+afterEach(() => {
+  server.resetHandlers();
+});
+
+afterAll(() => {
+  server.close();
+});

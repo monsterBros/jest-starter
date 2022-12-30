@@ -7,6 +7,9 @@ module.exports = {
     preset: 'ts-jest',
     moduleDirectories: ["node_modules", "src"],
     testEnvironment: "jsdom",
+    transform: {
+        ".+\\.(css|styl|less|sass|scss|png|jpg|ttf|woff|woff2)$": "jest-transform-stub"
+    },
     // testEnvironment: 'jest-environment-jsdom-global',
     // All imported modules in your tests should be mocked automatically
     // automock: false,
